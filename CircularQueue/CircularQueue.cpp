@@ -37,8 +37,11 @@ public:
     }
     void remove() {
         if (FRONT == -1) {
-
+            cout << "Queue overflo\n";
+            return;
         }
+        cout << "The element deleted from the queue list: " << queue_array[FRONT] << "\n";
+
     }
 };
 
